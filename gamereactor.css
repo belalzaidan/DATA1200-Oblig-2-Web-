@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&display=swap');
+@font-face {
+  font-family: Akhand;
+  src: url(Akhand.otf);
+}
+@font-face {
+  font-family: FiraSans;
+  src: url(FiraSans-Bold.ttf);
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 50px rgb(155, 200, 255);
+  }
+  to {
+    text-shadow: 0 0 30px rgb(155, 200, 255), 0 0 10px rgb(155, 200, 255);
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c8c8c; 
+}
+#logo{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  width: 75%; 
+}
+#dato{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  line-height: 1.5;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 0;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+  
+.sidenav a:hover {
+  color: #f1f1f1;
+  }
+  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.des{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  color: rgb(88, 88, 88);
+  font-size: 2vw;
+  line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5vw;
+}
+.intro{
+  border-left: 40px solid rgb(0, 166, 255);
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(68, 94, 107);
+  font-size: medium;
+	font-family: 'FiraSans', sans-serif;
+}
+#annonse{
+  margin: 0px;
+}
+#gamename{
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+}
+#poster{
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 40vw; 
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 40vw;
+  font-size: 3rem;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url("witcher.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.topright {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3vw;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: white;
+  border: 0.5vw solid rgb(255, 255, 255);
+  border-right-width: 50px;
+  border-left-width: 50px;
+  border-radius: 10px;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width:450px) {
+  .topright{bottom: 20px;
+  right:20px;  }
+}
+.topright:hover{
+  color: #ffffff;
+  background-color: rgb(68, 94, 107);
+  border: 5px solid rgb(068, 94, 107);
+  border-right-width: 50px;
+  border-left-width: 50px;
+}
+.gg-arrow-top-right-o{
+  size: 10px;
+}
+#text{
+  color: white;
+  background-color: black;
+  display: block;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 50%;  
+  border: 5px solid rgb(255, 255, 255);
+  border-right-width: 50px;
+  border-left-width: 50px;
+  line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+}
+.secondpart {
+  display: flex;
+  border-left: 40px solid rgb(0, 166, 255);
+  height: 160px;  
+  position: left;
+  left: 50%;
+  top: 0;
+}
+#text2{
+  text-align:center;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+	font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #000000;
+  border-right: 10px solid rgb(0, 166, 255);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#text2:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-right: 10px solid rgb(0, 166, 255);
+  border-top: 1px dotted #000000;
+  border-bottom: 1px dotted #000000;
+  border-left: 1px dotted #000000;
+  border-radius: 10px;
+  padding: 8px;
+}
+#part1{
+  color: rgb(0, 166, 255);
+  font-family:'Outfit', sans-serif ;
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+#part1:hover{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+#second{
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.container1 {
+  position: relative;
+  width: 100%;
+  min-height:98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url("secondpart.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+
+  
+}
+.pictext{
+  bottom: 20px;
+  right: 25px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: white;
+  border: 5px solid rgb(255, 255, 255);
+  border-right-width: 50px;
+  border-left-width: 25px;
+  user-select: none;
+}
+.thirdpart{
+  border-left: 40px solid rgb(0, 166, 255);
+  height: 850px;
+}
+#title{
+  text-align: left;
+  margin: auto;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0px;
+  width: 75%;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  line-height: 0.75;
+	font-family: 'Akhand', sans-serif;
+}
+#undertitle{
+  text-align: left;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 75%;
+  color: rgb(88, 88, 88);
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: 'FiraSans', serif;
+}
+#text3{
+  column-count: repeat;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 83%;
+  color: rgb(0,0,0);
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Ubuntu Cond',sans-serif;
+}
+#text4{
+  column-count: 2;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: 13%;
+  width: 83%;
+  color: rgb(0,0,0);
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Ubuntu Cond',sans-serif;
+}
+.fourthpart{
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #e4e4e4 5px,
+    #e4e4e4 18px  
+  );
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 2%;
+  height: 145px;
+}
+#title2{
+  text-align: left;
+  margin: auto;
+  padding-top: 3%;
+  padding-left: auto;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  width: 75%;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  line-height: 0.75;
+  font-family: 'Akhand', sans-serif;
+}
+#undertitle2{
+  text-align: left;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: 15%;
+  width: 75%;
+  color: rgb(88, 88, 88);
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: 'FiraSans', serif;
+}
+.fifthpart{  
+  background: repeating-linear-gradient(
+    45deg,
+    #e4e4e4,
+    #e4e4e4 8px,
+    transparent 5px,
+    transparent 18px
+  );
+  background-size: 141px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 850px;
+}
+.container2{
+  width: 100%;
+  min-height: 98vh;
+  font-size: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url("dmc.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.pictext2{
+  bottom: 20px;
+  right: 35px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: white;
+  border: 5px solid rgb(255, 255, 255);
+  border-right-width: 50px;
+  border-left-width: 25px;
+  user-select: none;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
